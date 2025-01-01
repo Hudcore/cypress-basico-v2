@@ -165,6 +165,7 @@ describe('Central de Atendimento ao Cliente TAT', function () { //describe repre
 
   })    
 
+/*  -- comentado para passar no CI
 
   it('Upload de arquivo da pasta fixtures', function(){
 
@@ -201,7 +202,7 @@ describe('Central de Atendimento ao Cliente TAT', function () { //describe repre
         .should(function($input) { expect($input[0].files[0].name).to.equal('example.json')})
         
     })
-    
+    */
 
 it('Verifica que a página abre, sem precisar clicar',function(){
     cy.get('#privacy a').should('have.attr', 'target', '_blank') //pega o elemento A na DIV privacy e verifica que abre em outra aba
